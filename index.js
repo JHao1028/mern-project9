@@ -11,7 +11,7 @@ const cors = require("cors");
 
 //連接MongoDB
 mongoose
-  .connect(process.env.MONGODB_CONNECTION)
+  .createConnection(process.env.MONGODB_CONNECTION)
   .then(() => {
     console.log("正在連接mongodb...");
   })
