@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-const dotenv = require("dotenv");
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 dotenv.config();
 const authRoute = require("./routes").auth; //連到routes資料夾裡面的auth屬性
 const courseRoute = require("./routes").course;
